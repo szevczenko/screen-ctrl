@@ -1,0 +1,70 @@
+2026-04-08 13:18:36,431 [INFO] screen-ctrl: screen-ctrl starting…
+2026-04-08 13:18:36,431 [INFO] screen-ctrl: Ready – waiting for MQTT commands on escape/control
+2026-04-08 13:18:36,431 [INFO] app.mqtt_client: Connecting to MQTT broker localhost:1883
+2026-04-08 13:18:36,435 [INFO] app.mqtt_client: MQTT connected – subscribed to escape/control
+2026-04-08 13:18:54,529 [INFO] app.mqtt_client: MQTT ← {'cmd': 'start_scene'}
+2026-04-08 13:18:54,529 [INFO] app.scene: start_scene: video=intro.mp4 bg=tlo.png ambient=ambient.mp3
+2026-04-08 13:18:54,531 [CRITICAL] screen-ctrl: Fatal error: [Errno 2] No such file or directory: 'mpv'
+2026-04-08 13:18:54,531 [INFO] app.player: All playback stopped
+2026-04-08 13:20:37,623 [INFO] screen-ctrl: screen-ctrl starting…
+2026-04-08 13:20:37,623 [INFO] screen-ctrl: Ready – waiting for MQTT commands on escape/control
+2026-04-08 13:20:37,623 [INFO] app.mqtt_client: Connecting to MQTT broker localhost:1883
+2026-04-08 13:20:37,627 [INFO] app.mqtt_client: MQTT connected – subscribed to escape/control
+2026-04-08 13:20:43,103 [INFO] app.mqtt_client: MQTT ← {'cmd': 'start_scene'}
+2026-04-08 13:20:43,103 [INFO] app.scene: start_scene: video=intro.mp4 bg=tlo.png ambient=ambient.mp3
+2026-04-08 13:20:43,104 [INFO] app.player: play_video: intro.mp4
+2026-04-08 13:20:48,586 [INFO] app.scene: Scene transition → bg=tlo.png  ambient=ambient.mp3
+2026-04-08 13:20:48,587 [INFO] app.player: show_image: tlo.png
+2026-04-08 13:20:48,589 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 13:25:19,645 [INFO] app.mqtt_client: MQTT ← {'cmd': 'start_scene'}
+2026-04-08 13:25:19,645 [INFO] app.scene: start_scene: video=intro.mp4 bg=tlo.png ambient=ambient.mp3
+2026-04-08 13:25:19,647 [INFO] app.player: play_video: intro.mp4
+2026-04-08 13:25:25,003 [INFO] app.scene: Scene transition → bg=tlo.png  ambient=ambient.mp3
+2026-04-08 13:25:25,004 [INFO] app.player: show_image: tlo.png
+2026-04-08 13:25:25,021 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 13:34:56,903 [INFO] screen-ctrl: Shutdown (signal 2)
+2026-04-08 13:34:56,911 [INFO] app.player: All playback stopped
+2026-04-08 13:34:56,912 [INFO] app.scene: Scene stopped
+2026-04-08 13:34:58,912 [INFO] screen-ctrl: screen-ctrl starting…
+2026-04-08 13:34:58,912 [INFO] screen-ctrl: Ready – waiting for MQTT commands on escape/control
+2026-04-08 13:34:58,913 [INFO] app.mqtt_client: Connecting to MQTT broker localhost:1883
+2026-04-08 13:34:58,917 [INFO] app.mqtt_client: MQTT connected – subscribed to escape/control
+2026-04-08 13:35:08,948 [INFO] app.mqtt_client: MQTT ← {'cmd': 'start_scene'}
+2026-04-08 13:35:08,948 [INFO] app.scene: start_scene: video=intro.mp4 bg=tlo.png ambient=ambient.mp3
+2026-04-08 13:35:08,959 [INFO] app.player: play_video: intro.mp4
+2026-04-08 13:35:14,410 [INFO] app.scene: Scene transition → bg=tlo.png  ambient=ambient.mp3
+2026-04-08 13:35:14,412 [INFO] app.player: show_image: tlo.png
+2026-04-08 13:35:14,413 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 13:35:40,423 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_sound', 'file': 'ambient.mp3'}
+2026-04-08 13:35:40,425 [INFO] app.player: play_effect: ambient.mp3
+2026-04-08 13:36:56,172 [INFO] screen-ctrl: Shutdown (signal 2)
+2026-04-08 13:36:56,188 [INFO] app.player: All playback stopped
+2026-04-08 13:36:56,188 [INFO] app.scene: Scene stopped
+2026-04-08 15:28:46,085 [INFO] screen-ctrl: screen-ctrl starting…
+2026-04-08 15:28:46,085 [INFO] app.player: Player backend: python-mpv
+2026-04-08 15:28:46,086 [INFO] screen-ctrl: Ready – waiting for MQTT commands on escape/control
+2026-04-08 15:28:46,086 [INFO] app.mqtt_client: Connecting to MQTT broker localhost:1883
+2026-04-08 15:28:46,088 [INFO] app.mqtt_client: MQTT connected – subscribed to escape/control
+2026-04-08 15:29:03,347 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_sound', 'file': 'ambient.mp3'}
+2026-04-08 15:29:03,347 [INFO] app.player: play_effect: ambient.mp3
+2026-04-08 15:29:42,055 [INFO] app.mqtt_client: MQTT ← {'cmd': 'start_scene'}
+2026-04-08 15:29:42,055 [INFO] app.scene: start_scene: video=intro.mp4 bg=tlo.png ambient=ambient.mp3
+2026-04-08 15:29:42,102 [INFO] app.player: play_video: intro.mp4
+2026-04-08 15:29:47,300 [INFO] app.scene: Scene transition → bg=tlo.png  ambient=ambient.mp3
+2026-04-08 15:29:47,387 [INFO] app.player: show_image: tlo.png
+2026-04-08 15:29:47,400 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 15:29:55,579 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_ambient', 'file': 'ambient.mp3'}
+2026-04-08 15:29:55,596 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 15:30:00,711 [INFO] app.mqtt_client: MQTT ← {'cmd': 'stop_sound'}
+2026-04-08 15:30:00,711 [INFO] app.player: All one-shot sounds stopped
+2026-04-08 15:30:06,464 [INFO] app.mqtt_client: MQTT ← {'cmd': 'stop_ambient'}
+2026-04-08 15:30:06,468 [INFO] app.player: Ambient stopped
+2026-04-08 15:30:13,457 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_sound', 'file': 'scare.mp3'}
+2026-04-08 15:30:13,458 [ERROR] app.player: Effect not found: /home/dmyshe@ad.global/projects/node-red/screen-ctrl/media/audio/scare.mp3
+2026-04-08 15:30:19,753 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_sound', 'file': 'scare.mp3'}
+2026-04-08 15:30:19,753 [ERROR] app.player: Effect not found: /home/dmyshe@ad.global/projects/node-red/screen-ctrl/media/audio/scare.mp3
+2026-04-08 15:30:24,981 [INFO] app.mqtt_client: MQTT ← {'cmd': 'play_ambient', 'file': 'ambient.mp3'}
+2026-04-08 15:30:24,992 [INFO] app.player: play_ambient: ambient.mp3
+2026-04-08 15:30:36,350 [INFO] app.mqtt_client: MQTT ← {'cmd': 'stop'}
+2026-04-08 15:30:36,370 [INFO] app.player: All playback stopped
+2026-04-08 15:30:36,371 [INFO] app.scene: Scene stopped

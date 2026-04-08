@@ -1,0 +1,29 @@
+[Unit]
+Description=screen-ctrl – escape room media player
+# Start after the display server and network are available
+After=network.target graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+User=__APP_USER__
+WorkingDirectory=__INSTALL_DIR__
+
+ExecStart=__INSTALL_DIR__/venv/bin/python main.py --config __INSTALL_DIR__/config.yml
+
+# Restart automatically if the process crashes
+Restart=always
+RestartSec=5
+
+# Display environment – required so mpv can open a window
+# Adjust if you use Wayland (WAYLAND_DISPLAY=wayland-1) or DRM (remove both)
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/__APP_USER__/.Xauthority
+
+# Keep logs tidy
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=screen-ctrl
+
+[Install]
+WantedBy=graphical-session.target

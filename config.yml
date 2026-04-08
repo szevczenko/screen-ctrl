@@ -1,0 +1,39 @@
+# screen-ctrl configuration
+# Copy this file to config.yml and adjust for your setup.
+
+# ── MQTT ─────────────────────────────────────────────────────────────────────
+mqtt:
+  broker: "localhost"   # IP address of your MQTT broker / Node-RED host
+  port: 1883
+  topic_control: "escape/control"   # Node-RED publishes commands here
+  topic_status:  "escape/status"    # screen-ctrl publishes status here (future)
+  keepalive: 60
+
+# ── Media files ───────────────────────────────────────────────────────────────
+# All paths are relative to base_path.
+#   /home/pi/
+#     videos/   ← .mp4 / .mkv / .avi
+#     images/   ← .png / .jpg
+#     audio/    ← .mp3 / .wav / .ogg
+media:
+  base_path: "/home/dmyshe@ad.global/projects/node-red/screen-ctrl/media"
+  videos_dir: "videos"
+  images_dir: "images"
+  audio_dir:  "audio"
+
+# ── Default scene ─────────────────────────────────────────────────────────────
+# Used when start_scene is sent without explicit filenames.
+scene:
+  default_video:      "intro.mp4"
+  default_background: "tlo.png"
+  default_ambient:    "ambient.mp3"
+
+# ── mpv player ────────────────────────────────────────────────────────────────
+mpv:
+  fullscreen: true
+  volume: 80          # 0-100
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+logging:
+  level: "INFO"                      # DEBUG | INFO | WARNING | ERROR
+  file: "/home/dmyshe@ad.global/projects/node-red/screen-ctrl/screen-ctrl.log"

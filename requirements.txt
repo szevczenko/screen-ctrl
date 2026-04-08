@@ -1,0 +1,3 @@
+paho-mqtt>=1.6.1
+python-mpv>=1.0.0
+PyYAML>=6.0
